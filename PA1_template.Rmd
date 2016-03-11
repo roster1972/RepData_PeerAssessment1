@@ -1,5 +1,7 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "Reproducible Research: Course Project 1"
+author: "Robert Osterried"
+date: "March 11, 2016"
 output: 
   html_document:
     keep_md: true
@@ -7,7 +9,12 @@ output:
 
 
 ## Loading and preprocessing the data
-
+First, let's load the data and take a look . . .
+```{r, echo=TRUE}
+data <- read.csv('activity.csv')
+names(data)
+head(data)
+```
 
 
 ## What is mean total number of steps taken per day?
